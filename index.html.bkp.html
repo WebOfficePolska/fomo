@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Fomo</title>
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/header_animate.css">
+		<link rel="stylesheet" type="text/css" href="css/compiled.css">
+
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300,700' rel='stylesheet' type='text/css'>
+
+		
+
+		<style type="text/css">
+
+
+			.section-header {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14pt;
+				font-weight: 600;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				text-transform: uppercase;
+			}
+
+
+			#fomo-wrapper {
+				max-width: 1920pt;
+				margin: 0 auto;
+			}
+
+			#fomo-wrapper, #menu-top {
+				border: 0px solid black;
+			}	
+
+
+			#header {
+				position: relative;				
+				width: 100%;
+				height: 1105px;
+				overflow: hidden;
+			}
+
+
+			nav#menu-top ul {
+				display: flex;
+				flex-direction: row;
+				list-style: none;
+				justify-content: center;
+				padding-top: 50px;				
+				padding-bottom: 70px;
+			}
+
+			nav#menu-top ul>li {
+				margin: 0 45px; 				
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14pt;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: #000;
+			}
+
+			#section-slider {
+				display: flex;
+				flex-direction: column;
+			}
+
+			#section-slider #logo {
+				display: flex;
+				justify-content: center;
+			}
+
+			#section-slider #slider {
+				display: flex;
+				justify-content: center;
+				padding-top: 160px;								
+			}
+
+			section {
+				padding: 0 74px 74px 74px;
+			}
+
+			.box {display: flex;}
+			.box-col {display: flex; flex-flow: column;}
+			.box-row {display: flex; flex-flow: row; }
+			.box-wrap {flex-wrap: wrap;}
+
+			.w-40 {width: 40%;}
+			.w-50 {width: 50%;}
+			.w-60 {width: 60%;}
+			.w-100 {width: 100%;}
+
+			.h-40 {height: 40%;}
+			.h-60 {height: 60%;}
+			.h-100 {height: 100%;}
+
+
+			.p-60 {
+				padding: 60px;
+			}
+
+			.product-name {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 42px;
+				font-weight: 700;		
+				text-transform: uppercase;		
+			}
+			.product-type {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 42px;
+				font-weight: 300;
+				text-transform: uppercase;
+			}
+
+			.product-item {
+				border: 0px solid red;
+			}
+
+			.text-right {text-align: right;}
+			.text-center {text-align: center;}
+			.text-left {text-align: left;}
+			.text-up {align-items: flex-start;}
+			.text-down {align-items: flex-end;}
+
+			#products div {border: 1px solid green;}
+			#bs_products div {border: 1px solid green;}
+
+		</style>
+
+
+	</head>
+
+	<body>
+
+		<div id="fomo-wrapper">
+
+			<!-- start Header -->
+			<header id="header">				
+				<nav id="menu-top">
+						<ul>
+							<li>Produkty</li>
+							<li>Inspiracja</li>
+							<li>Kontakt</li>
+						</ul>
+				</nav>
+				<!-- end menu-top -->
+
+				<div id="section-slider">
+					<div id="logo">
+						<img src="images/fomo_logo.png" width="180pt" height="51pt">
+					</div>
+
+					<div id="slider">
+						<img src="images/przedmiot_1.png" width="600pt" height="600pt">
+					</div>
+				</div>
+				<!-- end section-slider -->
+
+				<div class="falling-snow">
+				  <i></i>
+				  <img src="images/pattern_tyl.jpg">
+				</div>
+			</header>
+			<!-- end header -->
+
+			<section id="bs_products">
+					<div class="row">
+						<h4 class="section-header text-center">produkty</h4>
+					</div>				
+					<div class="row">
+						<div class="col-md-17">
+							<div class="col-28">
+								1
+							</div>
+							<div class="col-28">
+								2
+							</div>
+						</div>
+						<div class="col-md-11">
+							<div class="col-28 h-100">
+								3
+							</div>
+						</div>
+					</div>					
+
+			</section>
+
+
+			<!-- Start Product Section -->
+			<section id="products">
+				<header>
+					<h4>produkty</h4>
+				</header>
+				<div class="box-row box-wrap w-100">
+					<div class="w-60">
+						<div style="background-color: rgb(238,238,238);">
+							<div class="box box-row p-60 product-item" style="">
+								<div class="w-50">
+									<img src="images/przedmiot_1_line.png" style="width: 100%; height: auto;  display: block;">
+								</div>								
+								<div class="box w-50 text-right text-down">
+									<h5 class="product-name">Nazwa</h5>
+									<h6 class="product-type">Rodzaj</h6>									
+								</div>
+							</div>
+						</div>					
+						
+						<div class="product-item">
+							<img src="images/pattern_2.jpg" width="100%" >
+						</div>
+					</div>
+					<div class="box w-40 product-item">
+						<div class="w-100" style="background-color: rgb(225,220,220);">
+							<div class="p-60 text-center h-100">
+								<div>
+									<h5 class="product-name">Nazwa</h5>
+									<h6 class="product-type">Rodzaj</h6>									
+								</div>
+								<div class="h-100" style="display: flex; align-items: center; justify-content: center;">
+									<img src="images/przedmiot_1_line.png" style="width: 500px; height: auto;  display: block;">
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Product Section -->
+
+		</div> 
+		<!-- end fomo-wrapper -->
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
