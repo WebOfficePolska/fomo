@@ -13,9 +13,21 @@
 
 			h4	{
 				font-family: "Open Sans"; 
-				font-size: 14pt;
+				font-size: 14px;
 				font-weight: 600;				
 			}
+
+			section header h4 {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
+				font-weight: 600;
+				display: flex;
+				justify-content: center;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				text-transform: uppercase;
+			}
+
 
 			#fomo-wrapper {
 				max-width: 1920pt;
@@ -23,36 +35,19 @@
 			}
 
 			#fomo-wrapper, #menu-top {
-				border: 1px solid black;
+				border: 0px solid black;
 			}	
 
 
 			#header {
 				position: relative;				
 				width: 100%;
-				height: 1024pt;
+				height: 1105px;
 				overflow: hidden;
 			}
 
-			#header .bg-video {
-				width: 100%;
-				height: 1024pt;
-				position: absolute;
-				top: 0px;
-				left: 0px;
-			}
 
-			#header video {
-				min-width: 100%;
-				height: 1024pt;
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				z-index: -100;
-			}
-
-
-			#menu-top ul {
+			nav#menu-top ul {
 				display: flex;
 				flex-direction: row;
 				list-style: none;
@@ -61,7 +56,7 @@
 				padding-bottom: 70px;
 			}
 
-			#menu-top ul>li {
+			nav#menu-top ul>li {
 				margin: 0 45px; 				
 				font-family: 'Open Sans', sans-serif;
 				font-size: 14px;
@@ -75,7 +70,7 @@
 				flex-direction: column;
 			}
 
-			#section-slider header {
+			#section-slider #logo {
 				display: flex;
 				justify-content: center;
 			}
@@ -95,44 +90,43 @@
 
 		<div id="fomo-wrapper">
 
-			<div id="header">				
-				<div id="menu-top">
-					<header>
-						<nav>
-							<ul class="">
-								<li>Produkty</li>
-								<li>Inspiracja</li>
-								<li>Kontakt</li>
-							</ul>
-						</nav>
-					</header>							
-				</div>
+			<!-- start Header -->
+			<header id="header">				
+				<nav id="menu-top">
+						<ul>
+							<li>Produkty</li>
+							<li>Inspiracja</li>
+							<li>Kontakt</li>
+						</ul>
+				</nav>
 				<!-- end menu-top -->
 
 				<div id="section-slider">
-					<header>
+					<div id="logo">
 						<img src="images/fomo_logo.png" width="180pt" height="51pt">
-					</header>
+					</div>
 
 					<div id="slider">
 						<img src="images/przedmiot_1.png" width="600pt" height="600pt">
 					</div>
 				</div>
 				<!-- end section-slider -->
-<div class="falling-snow">
-  <i></i>
-  <img src="images/pattern_tyl.jpg">
-</div>
 
-			</div>
+				<div class="falling-snow">
+				  <i></i>
+				  <img src="images/pattern_tyl.jpg">
+				</div>
+
+			</header>
 			<!-- end header -->
 
+			<!-- Start Product Section -->
 			<section id="products">
 				<header>
 					<h4>produkty</h4>
 				</header>
 			</section>
-
+			<!-- end Product Section -->
 
 		</div> 
 		<!-- end fomo-wrapper -->
