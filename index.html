@@ -120,7 +120,14 @@
 			.text-down {align-items: flex-end;}
 
 
-		
+			#myVideo {
+			  position: absolute;
+			  right: 0;
+			  bottom: 0;
+			  min-width: 100%; 
+			  min-height: 100%;
+			  z-index: -100;
+			}		
 
 
 		</style>
@@ -143,21 +150,22 @@
 				</nav>
 				<!-- end menu-top -->
 
+				<video autoplay muted loop id="myVideo">
+					<source src="images/dropsy.mp4" type="video/mp4">
+				</video>
+
 				<div id="section-slider">
 					<div id="logo">
 						<img src="images/fomo_logo.png" width="180pt" height="51pt">
 					</div>
 
-					<div id="slider">
+					<div id="slider" >
 						<img src="images/przedmiot_1.png" width="600pt" height="600pt">
 					</div>
 				</div>
 				<!-- end section-slider -->
 
-				<div class="falling-snow">
-				  <i></i>
-				  <img src="images/pattern_tyl.jpg">
-				</div>
+
 			</header>
 			<!-- end header -->
 
