@@ -50,13 +50,13 @@
 
 @media all and (max-width: 480px) {
   #slider img {max-height: 400px; max-width: 400px;}
+  section {padding: 0 25px;}
 }
 
 @media all and (max-width: 640px) {
   #slider img {max-height: 400px; max-width: 400px;}
   #inspirations-images { display: flex;flex-flow: column; } 
   .products {padding: 0;}
-  section {padding: 0 25px;}
   .view { flex: auto; margin: 36px 0;}
 }
 /*0
