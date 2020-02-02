@@ -290,9 +290,8 @@
 .products {
   display: flex;  
   flex-flow: row wrap;
-  font-weight: bold;
   text-align: center;
-  padding: 74px;
+  padding: 0 74px 74px 74px;
 }
 
 .products > * {  
@@ -302,20 +301,29 @@
 
 
 .main {
-  text-align: left;
-  background: deepskyblue;
+  	text-align: left;
+  	background-color: rgb(238,238,238);
 }
 
 .aside-1 {
-  background-color: rgb(225,220,220);
+	background-color: rgb(225,220,220);
 }
 
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0 35%; }
+
+
+@media all and (min-width: 480px) {
+  	.main  { flex: 1; }
+    .main  { order: 2; }
+  	.aside { order: 1; }
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 640px) {
+  .main  { flex: 1 0 100%; }
+}
+
+@media all and (min-width: 768px) {
   .main  { flex: 1 0 60%; }
+  .aside { flex: 1 0 35%; }
   .main  { order: 1; }
   .aside { order: 2; }
 }
@@ -333,7 +341,7 @@
 <div class="products">
 
 	<div class="main">
-		<div class="p-60" style="background-color: rgb(238,238,238);">
+		<div class="p-60" style="">
 			<div><img src="images/przedmiot_1_line.png" class="img-fluid"></div>
 			<div style="text-align: right;">
 				<h5 class="product-name">Nazwa main</h5>
