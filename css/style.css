@@ -71,6 +71,8 @@ nav#menu-top ul>li {
 	padding-top: 160px;								
 }
 
+#slider img {max-height: 600px; max-width: 600px;}
+
 section {padding: 0 74px 74px 74px;}
 
 .box {display: flex;}
