@@ -57,7 +57,7 @@
   #slider img {max-height: 400px; max-width: 400px;}
   #inspirations-images { display: flex;flex-flow: column; } 
   .products {padding: 0;}
-  .view { flex: auto; margin: 18px 0;}
+  .view { flex: auto; margin: 18px 0;} 
 }
 /*0
 @media all and (max-width: 768px) {
