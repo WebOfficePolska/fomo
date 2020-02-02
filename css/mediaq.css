@@ -43,19 +43,27 @@
 
 
 
-@media all and (min-width: 480px) {
-	#inspirations-images { display: flex;flex-flow: column;	}	
-	.view { flex: 1; margin: 36px 0;}
+#inspirations-images {display: flex;flex-flow: row wrap;}
+#inspirations-images .mask {display: flex; align-items: center;}
+.view { flex: 1; margin: 37px;}
+
+
+@media all and (max-width: 480px) {
+/*	#inspirations-images { display: flex;flex-flow: column;	}	
+	.view { flex: 1; margin: 36px 0;}*/
 }
 
-@media all and (min-width: 640px) {
-/*  	.view { flex: 1; border: 2px solid red; }*/
-}
+@media all and (max-width: 640px) {
+  #inspirations-images { display: flex;flex-flow: column; } 
+  .products {padding: 0;}
+  .view { flex: 1; margin: 36px 0;}
 
-@media all and (min-width: 768px) {
+}
+/*
+@media all and (max-width: 768px) {
 	#inspirations-images {display: flex;flex-flow: row wrap;}
 	#inspirations-images .mask {display: flex; align-items: center;}
 	.view { flex: 1; margin: 37px;}
 }
-	
+*/	
 
