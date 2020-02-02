@@ -56,10 +56,9 @@
 @media all and (max-width: 640px) {
   #inspirations-images { display: flex;flex-flow: column; } 
   .products {padding: 0;}
-  .view { flex: 1; margin: 36px 0;}
-
+  .view { flex: auto; margin: 36px 0;}
 }
-/*
+/*0
 @media all and (max-width: 768px) {
 	#inspirations-images {display: flex;flex-flow: row wrap;}
 	#inspirations-images .mask {display: flex; align-items: center;}
