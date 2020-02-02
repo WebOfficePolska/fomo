@@ -283,46 +283,80 @@
 			</header>
 			<!-- end header -->
 
-			<section id="bs_products">
+
+
+
+<style type="text/css">
+.products {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  padding: 74px;
+}
+
+.products > * {  
+  flex: 1 100%;
+  margin: 4px;
+}
+
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background-color: rgb(225,220,220);
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 35%; }
+}
+
+@media all and (min-width: 800px) {
+  .main  { flex: 1 0 60%; }
+  .main  { order: 1; }
+  .aside { order: 2; }
+}
+	
+</style>
+
+
+
 					<div class="row">
 						<div class="col pl-0 pr-0">
 							<h4 class="section-header text-center">produkty</h4>
 						</div>						
 					</div>				
-					<div class="row">
-						<div class="col-md-17 p-0">
-							<div class="col-28 p-60" style="background-color: rgb(238,238,238);">
-								<div class="row">
-									<div class="col-md-28">
-										<img src="images/przedmiot_1_line.png" class="img-fluid">
-									</div>
-									<div class="col-md-28 text-right br-3">
-										<h5 class="product-name">Nazwa</h5>
-										<h6 class="product-type">Rodzaj</h6>									
-									</div>
-								</div>
-							</div>
-							<div class="col-28 p-0">
-								<img src="images/pattern_2.jpg" width="100%">
-							</div>
-						</div>
-						<div class="col-md-11 d-flex p-0" style="border-left: 2px solid #fff;">							
-							<div class="col-28 d-flex p-60" style="background-color: rgb(225,220,220);">
-								<div class="row">
-									<div class="col-md-28 text-center">
-										<h5 class="product-name">Nazwa</h5>
-										<h6 class="product-type">Rodzaj</h6>									
-									</div>									
-								</div>
-								<div class="row h-100">
-									<div class="col-md-28 d-flex align-items-center">
-										<img src="images/przedmiot_1_line.png" class="img-fluid mx-auto d-block">	
-									</div>			
-								</div>					
-							</div>
-						</div>
-					</div>					
-			</section>
+
+<div class="products">
+
+  	<div class="aside aside-1" style="display: flex; flex-direction: column;">
+  		<div class="p-60">
+			<h5 class="product-name">Nazwa aside</h5>
+			<h6 class="product-type">Rodzaj</h6>									
+  		</div>
+  		<div class="" style="display: flex; flex: 1; justify-content: center; flex-direction: column;">
+			<img src="images/przedmiot_1_line.png" class="">	  			
+  		</div>
+	</div>
+	<div class="main">
+		<div class="p-60" style="background-color: rgb(238,238,238);">
+			<div><img src="images/przedmiot_1_line.png" class="img-fluid"></div>
+			<div style="text-align: right;">
+				<h5 class="product-name">Nazwa main</h5>
+				<h6 class="product-type">Rodzaj</h6>									
+			</div>
+		</div>
+		<div>
+			<img src="images/pattern_2.jpg" width="100%">			
+		</div>
+	</div>
+
+</div>
+
+
 
 
 			<div>
