@@ -56,6 +56,7 @@
 @media all and (max-width: 640px) {
   #inspirations-images { display: flex;flex-flow: column; } 
   .products {padding: 0;}
+  section {padding: 0 25px;}
   .view { flex: auto; margin: 36px 0;}
 }
 /*0
