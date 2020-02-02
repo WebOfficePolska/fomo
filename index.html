@@ -7,7 +7,7 @@
 
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/header_animate.css">
-<!-- 		<link rel="stylesheet" type="text/css" href="css/hover_animate.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/hover_animate.css">
 
 		<link rel="stylesheet" type="text/css" href="css/compiled.css">
 
@@ -158,7 +158,7 @@
 				width: 100%; 				
 				max-width: 1000px;
 				margin: auto auto;			
-				padding: 18px;
+				padding: 0 0 36px 0;
 			}
 
 
@@ -192,57 +192,6 @@
 				padding: 74px 0;
 			}
 
-
-
-.view {
-    width: 100%;
-    /*height: 200px;*/
-
-    float: left;
-
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    box-shadow: 1px 1px 2px #e6e6e6;
-    cursor: default;
-    background: #fff url(../images/bgimg.jpg) no-repeat center center
-}
-.view .mask, .view .content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0
-}
-.view img {
-    display: block;
-    position: relative
-}
-
-.view-first:hover img { 
-    transform: scale(1.1);
-} 
-
-.view-first img { 
-    transition: all 0.2s linear;
-}
-
-.view-first .mask {
-    opacity: 0;
-    /*background-color: rgba(219,127,8, 0.7); */
-    /*background-color: #c99da3;*/
-    /*opacity: 0.9;*/
-    transition: all 0.4s ease-in-out;
-}
-
-.mask-color-1 {background-color: #c99da3;}
-.mask-color-2 {background-color: #844257;}
-.mask-color-3 {background-color: #8ea9bb;}
-
-.view-first:hover .mask { 
-    opacity: 0.9;
-}
 
 		</style>
 
@@ -291,7 +240,7 @@
   display: flex;  
   flex-flow: row wrap;
   text-align: center;
-  padding: 0 74px 74px 74px;
+  padding: 0 74px 70px 74px;
 }
 
 .products > * {  
@@ -315,10 +264,11 @@
   	.main  { flex: 1; }
     .main  { order: 2; }
   	.aside { order: 1; }
+
 }
 
 @media all and (min-width: 640px) {
-  .main  { flex: 1 0 100%; }
+  .main { flex: 1 0 100%; }
 }
 
 @media all and (min-width: 768px) {
@@ -327,46 +277,64 @@
   .main  { order: 1; }
   .aside { order: 2; }
 }
+
+
+
+
+@media all and (min-width: 480px) {
+	#inspirations-images { display: flex;flex-flow: column;	}	
+	.view { flex: 1; margin: 36px 0;}
+}
+
+@media all and (min-width: 640px) {
+/*  	.view { flex: 1; border: 2px solid red; }*/
+}
+
+@media all and (min-width: 768px) {
+	#inspirations-images {display: flex;flex-flow: row wrap;}
+	#inspirations-images .mask {display: flex; align-items: center;}
+	.view { flex: 1; margin: 37px;}
+}
 	
+
+
 </style>
 
 
 
-					<div class="row">
-						<div class="col pl-0 pr-0">
-							<h4 class="section-header text-center">produkty</h4>
-						</div>						
-					</div>				
+			<div class="row">
+				<div class="col pl-0 pr-0">
+					<h4 class="section-header text-center">produkty</h4>
+				</div>						
+			</div>				
 
-<div class="products">
+			<div class="products">
 
-	<div class="main">
-		<div class="p-60" style="">
-			<div><img src="images/przedmiot_1_line.png" class="img-fluid"></div>
-			<div style="text-align: right;">
-				<h5 class="product-name">Nazwa main</h5>
-				<h6 class="product-type">Rodzaj</h6>									
+				<div class="main">
+					<div class="p-60" style="">
+						<div><img src="images/przedmiot_1_line.png" class="img-fluid"></div>
+						<div style="text-align: right;">
+							<h5 class="product-name">Nazwa main</h5>
+							<h6 class="product-type">Rodzaj</h6>									
+						</div>
+					</div>
+					<div>
+						<img src="images/pattern_2.jpg" width="100%">			
+					</div>
+				</div>
+
+
+			  	<div class="aside aside-1" style="display: flex; flex-direction: column;">
+			  		<div class="p-60">
+						<h5 class="product-name">Nazwa aside</h5>
+						<h6 class="product-type">Rodzaj</h6>									
+			  		</div>
+			  		<div class="" style="display: flex; flex: 1; justify-content: center; flex-direction: column;">
+						<img src="images/przedmiot_1_line.png" class="img-fluid">	  			
+			  		</div>
+				</div>
+
 			</div>
-		</div>
-		<div>
-			<img src="images/pattern_2.jpg" width="100%">			
-		</div>
-	</div>
-
-
-  	<div class="aside aside-1" style="display: flex; flex-direction: column;">
-  		<div class="p-60">
-			<h5 class="product-name">Nazwa aside</h5>
-			<h6 class="product-type">Rodzaj</h6>									
-  		</div>
-  		<div class="" style="display: flex; flex: 1; justify-content: center; flex-direction: column;">
-			<img src="images/przedmiot_1_line.png" class="img-fluid">	  			
-  		</div>
-	</div>
-
-</div>
-
-
 
 
 			<div>
@@ -377,6 +345,8 @@
 				</div>
 			</div>
 
+
+			<!-- Inspiracje -->
 
 			<section id="inspirations">
 				<div class="row">
@@ -410,42 +380,60 @@
 
 				<!-- kolumny -->
 				<div class="row images">
-					<div class="col-28 col-xs-28 col-md-9 img-col pl-0 pr-0">
+					<style type="text/css">
 
+					</style>
+
+					
+					<div id="inspirations-images">
 						<div class="view view-first">  
 						     <img src="images/img1.jpg" width="100%">
 						     <div class="mask mask-color-1">  
-							     <h2>TY</h2>  
-							     <p>
-							     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							     </p>  						         
+						     	<div>
+								     <h2>TY</h2>  
+								     <p>
+								     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								     </p>  						         						     		
+						     	</div>
 						     </div>  
 						</div> 
 
-						
-					</div>
-					<div class="col-28 col-xs-28 col-md-9 img-col pl-0 pr-0 ml-1 mr-1">
 						<div class="view view-first">  
 						     <img src="images/img2.jpg" width="100%">
 						     <div class="mask mask-color-2">  
-							     <h2>TY</h2>  
-							     <p>
-							     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							     </p>  						         
+						     	<div>
+								     <h2>TWOJA PRZESTRZEŃ</h2>  
+								     <p>
+								     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								     </p>  						         						     		
+						     	</div>
 						     </div>  
 						</div> 
-					</div>
-					<div class="col-28 col-xs-28 col-md-9 img-col pl-0 pr-0">
+
 						<div class="view view-first">  
 						     <img src="images/img3.jpg" width="100%">
 						     <div class="mask mask-color-3">  
-							     <h2>TY</h2>  
-							     <p>
-							     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							     </p>  						         
+						     	<div>
+								     <h2>TWOJE PODRÓŻE</h2>  
+								     <p>
+								     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								     </p>  						         						     		
+						     	</div>
 						     </div>  
 						</div> 
 					</div>
@@ -453,6 +441,23 @@
 				<!-- end kolumny -->
 
 			</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 			<footer id="contact">
