@@ -60,11 +60,9 @@
   .products {padding: 0;}
   .view { flex: auto; margin: 18px 0;} 
 }
-/*0
+
 @media all and (max-width: 768px) {
-	#inspirations-images {display: flex;flex-flow: row wrap;}
-	#inspirations-images .mask {display: flex; align-items: center;}
-	.view { flex: 1; margin: 37px;}
+  .col-top, .col-pattern, .aside, .main { border: 0px; margin: 0px;}
 }
-*/	
+	
 
